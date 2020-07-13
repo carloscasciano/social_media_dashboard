@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import GlobalStyle from "./styles/global";
 import { themes, colors } from "./styles/themes";
 import ThemeContext from "./styles/ThemeContext";
+import Header from "./components/header/Header"
 
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState(themes.light);
+  const [currentTheme, setCurrentTheme] = useState(themes.dark);
 
   const handleThemeChange = () => {
     currentTheme === themes.light
@@ -17,11 +18,7 @@ function App() {
     <>
       <ThemeContext.Provider value={currentTheme}>
         <GlobalStyle theme={currentTheme} />
-        <div style={{height:"100px", width:"100px", backgroundColor:currentTheme.bg}}>
-          <p  style={{color: currentTheme.contrastText}}>OI</p>
-        </div>
-        <button onClick={()=>handleThemeChange()}> MUDE O ESTILO </button>
-
+        <Header theme={currentTheme} handleThemeChange={handleThemeChange}/>
       </ThemeContext.Provider>
     </>
   );

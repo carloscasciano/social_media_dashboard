@@ -1,17 +1,18 @@
+/* STYLED COMPONENTS DOES NOT SUPPORT LINEAR GRADIENT */
+
 export const colors = {
   limeGreen: "hsl(163, 72%, 41%)",
   brightRed: "hsl(356, 69%, 56%)",
   facebookBlue: "hsl(208, 92%, 53%)",
   twitterBlue: "hsl(203, 89%, 53%)",
-  instagramGradient:
-    "linear-gradient(90deg, rgba(253,196,104,1) 25%, rgba(223,73,150,1) 75%)",
+  instagramGradient: "rgba(253,196,104,1)",
   youTubeRed: "hsl(348, 97%, 39%)",
 };
 
 export const themes = {
   dark: {
-    toggle:
-      "linear-gradient(90deg, rgba(55,143,230,1) 25%, rgba(62,218,130,1) 75%)",
+    name: "dark",
+    toggle: "rgba(55,143,230,1)",
     bg: "hsl(230, 17%, 14%)",
     topBGPattern: "hsl(232, 19%, 15%)",
     cardBG: "hsl(228, 28%, 20%)",
@@ -19,6 +20,7 @@ export const themes = {
     contrastText: "hsl(0, 0%, 100%)",
   },
   light: {
+    name: "light",
     toggle: "hsl(230, 22%, 74%)",
     bg: "hsl(0, 0%, 100%)",
     topBGPattern: "hsl(225, 100%, 98%)",

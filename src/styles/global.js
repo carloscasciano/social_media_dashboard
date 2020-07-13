@@ -10,14 +10,9 @@ export default createGlobalStyle`
     }
     html, body, #root {
         height: 100%; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     body {
         height: 100%;
-        display: flex;
-        
         font: 15px 'Inter', sans-serif;
         font-weight: 300;
     }
