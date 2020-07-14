@@ -12,6 +12,10 @@ export const SubCardContainer = styled.div`
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+
+  :hover{
+    background-color: ${(props) => props.theme.cardHoverEffect};
+  }
 `;
 
 export const MetricNameContainer = styled.div`

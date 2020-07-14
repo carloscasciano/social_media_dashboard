@@ -10,6 +10,10 @@ export const MainCardContainer = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: ${(props) => props.theme.cardBG};
+
+  :hover{
+    background-color: ${(props) => props.theme.cardHoverEffect};
+  }
 `;
 
 export const ColorHighlight = styled.div`

@@ -18,6 +18,7 @@ export const themes = {
     cardBG: "hsl(228, 28%, 20%)",
     desaturatedText: "hsl(228, 34%, 66%)",
     contrastText: "hsl(0, 0%, 100%)",
+    cardHoverEffect: "#333a56"
   },
   light: {
     name: "light",
@@ -27,5 +28,6 @@ export const themes = {
     cardBG: "hsl(227, 47%, 96%)",
     desaturatedText: "hsl(228, 12%, 44%)",
     contrastText: "hsl(230, 17%, 14%)",
+    cardHoverEffect: "#e1e3f0"
   },
 };

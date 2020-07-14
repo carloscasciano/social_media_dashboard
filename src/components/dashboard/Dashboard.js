@@ -12,14 +12,14 @@ export default function Dashboard(props) {
     <div>
       <ThemeProvider theme={props.theme}>
         <MainCardsDashboardContainer>
-          {props.mainCardsData.map((c) => (
-            <MainCard key={Math.random()} mainCardData={c} />
+          {props.mainCardsData.map((card) => (
+            <MainCard key={Math.random()} mainCardData={card} />
           ))}
         </MainCardsDashboardContainer>
         <SubCardsDashboardContainer>
           <h3>Overview - Today</h3>
-          {props.subCardsData.map((c) => (
-            <SubCard key={Math.random()} subCardData={c} />
+          {props.subCardsData.map((card) => (
+            <SubCard key={Math.random()} subCardData={card} />
           ))}
         </SubCardsDashboardContainer>
       </ThemeProvider>
