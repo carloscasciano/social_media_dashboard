@@ -16,17 +16,15 @@ function App() {
   };
 
   return (
-    <>
-      <ThemeContext.Provider value={currentTheme}>
-        <GlobalStyle theme={currentTheme} />
-        <Header theme={currentTheme} handleThemeChange={handleThemeChange} />
-        <Dashboard
-          theme={currentTheme}
-          mainCardsData={dummyDataMainCards}
-          subCardsData={dummyDataSubCards}
-        />
-      </ThemeContext.Provider>
-    </>
+    <ThemeContext.Provider value={currentTheme}>
+      <GlobalStyle theme={currentTheme} />
+      <Header theme={currentTheme} handleThemeChange={handleThemeChange} />
+      <Dashboard
+        theme={currentTheme}
+        mainCardsData={dummyDataMainCards}
+        subCardsData={dummyDataSubCards}
+      />
+    </ThemeContext.Provider>
   );
 }
 

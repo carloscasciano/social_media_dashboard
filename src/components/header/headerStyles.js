@@ -1,4 +1,5 @@
 import styled from "styled-components";
+const mediaBreakPoint = "600px";
 
 export const HeaderContainer = styled.div`
   width: 100%;
@@ -7,6 +8,11 @@ export const HeaderContainer = styled.div`
   border-radius: 0 0 25px 25px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: ${mediaBreakPoint}) {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 `;
 
 export const TitleContainer = styled.div`
@@ -33,6 +39,15 @@ export const TitleContainer = styled.div`
     align-self: center;
     width: 86%;
     border-top: 1px solid ${(props) => props.theme.desaturatedText};
+
+    @media (min-width: ${mediaBreakPoint}) {
+      display: none;
+    }
+  }
+
+  @media (min-width: ${mediaBreakPoint}) {
+    width: 80%;
+    margin: 40px 0 0 11%;
   }
 `;
 
@@ -48,6 +63,11 @@ export const ThemeCommandContainer = styled.div`
     color: ${(props) => props.theme.desaturatedText};
     font-weight: 700;
     font-size: 15px;
+  }
+
+  @media (min-width: ${mediaBreakPoint}) {
+    margin: 40px 11% 0 0;
+    width: 250px;
   }
 `;
 
