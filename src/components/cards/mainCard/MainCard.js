@@ -8,7 +8,7 @@ import {
 } from "./mainCardStyles";
 import { getSocialImage } from "../../../resources/getSocialImage";
 import { getSocialColor } from "../../../resources/getSocialColor";
-import { roundMetrics } from "../../../resources/roundMetrics"
+import { roundMetrics } from "../../../resources/roundMetrics";
 
 export default function MainCard({ mainCardData }) {
   return (
