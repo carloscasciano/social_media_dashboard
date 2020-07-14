@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import GlobalStyle from "./styles/global";
 import { themes, colors } from "./styles/themes";
 import ThemeContext from "./styles/ThemeContext";
-import Header from "./components/header/Header"
+import Header from "./components/header/Header";
+import Dashboard from "./components/dashboard/Dashboard"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <ThemeContext.Provider value={currentTheme}>
         <GlobalStyle theme={currentTheme} />
         <Header theme={currentTheme} handleThemeChange={handleThemeChange}/>
+        <Dashboard theme={currentTheme}/>
       </ThemeContext.Provider>
     </>
   );

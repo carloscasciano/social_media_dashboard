@@ -12,6 +12,7 @@ export default createGlobalStyle`
         height: 100%; 
     }
     body {
+        background-color: ${props => (props.theme.bg)};
         height: 100%;
         font: 15px 'Inter', sans-serif;
         font-weight: 300;

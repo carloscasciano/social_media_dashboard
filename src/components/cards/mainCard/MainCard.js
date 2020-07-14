@@ -1,9 +1,16 @@
 import React from 'react'
+import {MainCardContainer, ColorHighlight, SocialContainer} from './mainCardStyles'
 
 export default function MainCard() {
     return (
-        <div>
-            
-        </div>
+       <>
+        <MainCardContainer>
+            <ColorHighlight />
+            <SocialContainer>
+                <img />
+                <p>oi</p>
+            </SocialContainer>
+        </MainCardContainer>
+       </>
     )
 }
