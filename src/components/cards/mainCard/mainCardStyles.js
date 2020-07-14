@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../../styles/themes";
 
 export const MainCardContainer = styled.div`
   height: 216px;
@@ -15,7 +16,7 @@ export const ColorHighlight = styled.div`
   height: 4px;
   width: 325px;
   border-radius: 4px 4px 0 0;
-  background-color: red;
+  background-color: ${(props) => props.socialColor};
 `;
 
 export const SocialContainer = styled.div`
@@ -58,5 +59,31 @@ export const MetricsContainer = styled.div`
     color: ${(props) => props.theme.desaturatedText};
     text-transform: uppercase;
     letter-spacing: 7px;
+  }
+`;
+
+export const ComparisonMetricsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 15px 0 0 0;
+
+  .comparison {
+    background-image: ${(props) =>
+      props.metricValue > 0
+        ? 'url("./images/icon-up.svg")'
+        : 'url("./images/icon-down.svg")'};
+    height: 10px;
+    width: 10px;
+    background-repeat: no-repeat;
+    margin: 7px 0 0 0;
+  }
+
+  p {
+    color: ${(props) =>
+      props.metricValue > 0 ? colors.limeGreen : colors.brightRed};
+    font-weight: 700;
+    font-size: 14px;
   }
 `;
