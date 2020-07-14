@@ -8,23 +8,34 @@ import {
 } from "./mainCardStyles";
 import { getSocialImage } from "../../../resources/getSocialImage";
 import { getSocialColor } from "../../../resources/getSocialColor";
+import { roundMetrics } from "../../../resources/roundMetrics"
 
-export default function MainCard() {
+export default function MainCard({ mainCardData }) {
   return (
     <>
       <MainCardContainer>
-        <ColorHighlight socialColor={getSocialColor("facebook")} />
+        <ColorHighlight
+          socialColor={getSocialColor(mainCardData.socialMedia)}
+        />
         <SocialContainer>
-          <img src={getSocialImage("facebook")} alt="social media" />
-          <p>@oioioi</p>
+          <img
+            src={getSocialImage(mainCardData.socialMedia)}
+            alt="social media"
+          />
+          <p>{mainCardData.userName}</p>
         </SocialContainer>
         <MetricsContainer>
-          <h1>1987</h1>
-          <p>followers</p>
+          <h1>{roundMetrics(mainCardData.metricValue)}</h1>
+          <p>{mainCardData.metric}</p>
         </MetricsContainer>
-        <ComparisonMetricsContainer metricValue="-4">
+        <ComparisonMetricsContainer metricValue={mainCardData.comparisonMetric}>
           <div className="comparison" />
-          <p>99 Today</p>
+          <p>
+            {mainCardData.comparisonMetric < 0
+              ? mainCardData.comparisonMetric * -1
+              : mainCardData.comparisonMetric}{" "}
+            Today
+          </p>
         </ComparisonMetricsContainer>
       </MainCardContainer>
     </>

@@ -1,4 +1,4 @@
-export const dummyDataMainCards = () => [
+export const dummyDataMainCards = [
   {
     socialMedia: "facebook",
     userName: "@nathanf",
