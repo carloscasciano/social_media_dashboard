@@ -9,6 +9,8 @@ export const MainCardsDashboardContainer = styled.div`
 
   @media (min-width: ${mediaBreakPoint}) {
     flex-direction: row;
+    justify-content: center;
+    margin: -100px 0 0 0;
   }
 `;
 

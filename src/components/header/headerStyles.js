@@ -47,7 +47,7 @@ export const TitleContainer = styled.div`
 
   @media (min-width: ${mediaBreakPoint}) {
     width: 80%;
-    margin: 40px 0 0 11%;
+    margin: 40px 0 0 120px;
   }
 `;
 
@@ -66,7 +66,7 @@ export const ThemeCommandContainer = styled.div`
   }
 
   @media (min-width: ${mediaBreakPoint}) {
-    margin: 40px 11% 0 0;
+    margin: 40px 140px 0 0;
     width: 250px;
   }
 `;

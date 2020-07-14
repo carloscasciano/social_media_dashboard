@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../../styles/themes";
+const mediaBreakPoint = "600px";
 
 export const MainCardContainer = styled.div`
   height: 216px;
@@ -14,6 +15,11 @@ export const MainCardContainer = styled.div`
   :hover{
     background-color: ${(props) => props.theme.cardHoverEffect};
   }
+
+  @media (min-width: ${mediaBreakPoint}) {
+    width: 255px;
+    margin: 0 30px 0 0;
+  }
 `;
 
 export const ColorHighlight = styled.div`
@@ -21,6 +27,10 @@ export const ColorHighlight = styled.div`
   width: 325px;
   border-radius: 4px 4px 0 0;
   background-color: ${(props) => props.socialColor};
+
+  @media (min-width: ${mediaBreakPoint}) {
+    width: 255px;
+  }
 `;
 
 export const SocialContainer = styled.div`
@@ -56,13 +66,14 @@ export const MetricsContainer = styled.div`
     font-weight: 700;
     color: ${(props) => props.theme.contrastText};
     font-size: 58px;
+    letter-spacing: -1px;
     padding: 0;
   }
 
   p {
     color: ${(props) => props.theme.desaturatedText};
     text-transform: uppercase;
-    letter-spacing: 7px;
+    letter-spacing: 6px;
   }
 `;
 
