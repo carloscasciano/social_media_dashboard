@@ -18,7 +18,7 @@ export const MainCardContainer = styled.div`
 
   @media (min-width: ${mediaBreakPoint}) {
     width: 255px;
-    margin: 0 30px 0 0;
+    margin: 0 30px 30px 0;
   }
 `;
 

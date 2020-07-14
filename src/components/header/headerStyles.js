@@ -66,7 +66,7 @@ export const ThemeCommandContainer = styled.div`
   }
 
   @media (min-width: ${mediaBreakPoint}) {
-    margin: 40px 140px 0 0;
+    margin: 40px 145px 0 0;
     width: 250px;
   }
 `;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../../../styles/themes";
+const mediaBreakPoint = "600px";
 
 export const SubCardContainer = styled.div`
   height: 125px;
@@ -15,6 +16,11 @@ export const SubCardContainer = styled.div`
 
   :hover{
     background-color: ${(props) => props.theme.cardHoverEffect};
+  }
+
+  @media (min-width: ${mediaBreakPoint}) {
+    width: 255px;
+    margin: 0 30px 30px 0;
   }
 `;
 
