@@ -1,5 +1,6 @@
 import React from 'react'
-import {MainCardContainer, ColorHighlight, SocialContainer} from './mainCardStyles'
+import {MainCardContainer, ColorHighlight, SocialContainer, MetricsContainer} from './mainCardStyles'
+import {getSocialImage} from '../../../resources/getSocialImage'
 
 export default function MainCard() {
     return (
@@ -7,9 +8,13 @@ export default function MainCard() {
         <MainCardContainer>
             <ColorHighlight />
             <SocialContainer>
-                <img />
-                <p>oi</p>
+                <img src={getSocialImage('facebook')} alt="social media"/>
+                <p>@oioioi</p>
             </SocialContainer>
+            <MetricsContainer>
+                <h1>1987</h1>
+                <p>followers</p>
+            </MetricsContainer>
         </MainCardContainer>
        </>
     )
