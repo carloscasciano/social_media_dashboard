@@ -74,7 +74,7 @@ export const ThemeCommandContainer = styled.div`
 export const ToggleButton = styled.div`
   display: flex;
   justify-content: ${(props) =>
-    props.theme.name === "dark" ? "flex-start" : "flex-end"};
+    props.theme.name === "dark" ? "flex-end" : "flex-start"};
   align-items: center;
   width: 48px;
   height: 24px;

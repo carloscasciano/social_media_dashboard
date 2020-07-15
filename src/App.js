@@ -7,7 +7,7 @@ import Dashboard from "./components/dashboard/Dashboard";
 import { dummyDataMainCards, dummyDataSubCards } from "./dummyData/dummyData";
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState(themes.dark);
+  const [currentTheme, setCurrentTheme] = useState(themes.light);
 
   const handleThemeChange = () => {
     currentTheme === themes.light
