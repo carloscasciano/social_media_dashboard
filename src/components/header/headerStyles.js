@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 const mediaBreakPoint = "600px";
 
 export const HeaderContainer = styled.div`
