@@ -14,7 +14,7 @@ export default function Header(props) {
       <HeaderContainer>
         <TitleContainer>
           <h3>Social Media Dashboard</h3>
-          <p>Total Followers: 23,004</p>
+          <p>Total Followers: 23,005</p>
           <div className="divider" />
         </TitleContainer>
         <ThemeCommandContainer>
