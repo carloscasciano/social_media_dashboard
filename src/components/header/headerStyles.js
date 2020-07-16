@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 const mediaBreakPoint = "600px";
 
 export const HeaderContainer = styled.div`
@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   border-radius: 0 0 25px 25px;
   display: flex;
   flex-direction: column;
+  transition: all 0.33s ease;
 
   @media (min-width: ${mediaBreakPoint}) {
     flex-direction: row;

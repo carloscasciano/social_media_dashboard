@@ -6,7 +6,6 @@ import Header from "./components/header/Header";
 import Dashboard from "./components/dashboard/Dashboard";
 import { dummyDataMainCards, dummyDataSubCards } from "./dummyData/dummyData";
 
-/* TESTING SOMETHING */
 
 function App() {
   const [currentTheme, setCurrentTheme] = useState(themes.light);
