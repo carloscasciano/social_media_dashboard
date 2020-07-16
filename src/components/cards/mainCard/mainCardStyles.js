@@ -54,6 +54,7 @@ export const SocialContainer = styled.div`
     color: ${(props) => props.theme.desaturatedText};
     font-weight: 700;
   }
+  
 `;
 export const MetricsContainer = styled.div`
   display: flex;
